@@ -1,8 +1,18 @@
+import src.utils
+import src.arithmetic
+
+from src.utils import *
+from src.arithmetic import *
 
 
-class tmp:
-    def __init__(self):
-        pass 
+print('\n'.join(dir()))
 
-if __name__ == '__main__':
-    temp = tmp()
+print()
+print('-'*50)
+print('Calling utils.read_file()\n')
+print(src.utils.read_file('src/file.txt'))
+
+print()
+print('-'*50)
+print('calling arithmetic ...\n')
+print(src.arithmetic.operations.add(3, 4))
